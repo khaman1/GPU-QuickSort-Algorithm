@@ -1,0 +1,51 @@
+
+Please note that you may need to install NVIDIA drivers and CUDA Toolkit to compile
+The latest NVIDIA Driver and GPU Computing SDK available in: http://developer.nvidia.com/cuda/cuda-downloads
+
+--------------------------------------------------------------------------------
+Installation Instructions: CUDA C SDK Release Notes 
+--------------------------------------------------------------------------------
+
+see http://developer.download.nvidia.com/compute/DevZone/docs/html/doc/CUDA_SDK_Release_Notes.txt
+
+--------------------------------------------------------------------------------
+Linux Installation Instructions
+--------------------------------------------------------------------------------
+	see http://developer.download.nvidia.com/compute/DevZone/docs/html/C/doc/CUDA_Getting_Started_Linux.pdf
+
+	1. Install the NVIDIA Linux display driver corresponds to your Linux distribution
+		More information on installing the driver is available in: 
+		http://us.download.nvidia.com/XFree86/Linux-x86/256.35/README/index.html. 
+	  
+	2. Install the NVIDIA Toolkit corresponds to your Linux distribution
+
+	3. Add the CUDA binaries and lib path to your PATH and LD_LIBRARY_PATH 
+	   environment variables.
+
+	     Make sure that you add the location of the CUDA binaries (such as nvcc) to 
+	     your PATH environment variable and the location of the CUDA libraries
+	     (such as libcuda.so) to your LD_LIBRARY_PATH environment variable.
+
+	     In the bash shell, one way to do this is to add the following lines to the 
+	     file ~/.bash_profile from your home directory.
+
+	     a. For 32-bit operating systems use the following paths 
+		 PATH=$PATH:<CUDA_INSTALL_PATH>/bin
+		 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<CUDA_INSTALL_PATH>/lib
+	    
+	     b. For 64-bit operating systems use the following paths
+		 PATH=$PATH:<CUDA_INSTALL_PATH>/bin
+		 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<CUDA_INSTALL_PATH>/lib64
+
+	     Then to export the environment variables add this to the profile configuration
+		 export PATH
+		 export LD_LIBRARY_PATH
+		
+--------------------------------------------------------------------------------
+Windows Installation Instructions
+--------------------------------------------------------------------------------
+see http://developer.download.nvidia.com/compute/DevZone/docs/html/C/doc/CUDA_Getting_Started_Windows.pdf
+
+	1. Install the NVIDIA Windows display driver corresponds to your Windows distribution
+	
+	2. Install the NVIDIA Toolkit corresponds to your Windows distribution
